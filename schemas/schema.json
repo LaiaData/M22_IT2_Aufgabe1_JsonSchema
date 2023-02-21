@@ -3,6 +3,13 @@
   "title": "Wurzelschema",
   "description": "Dies ist das Wurzelschema, das die Schemas für die einzlenen Felder referenziert.",
   "type": "object",
+  "required": [
+    "@context",
+    "gndIdentifier",
+    "id",
+    "preferredName",
+    "type"
+  ],
   "properties": {
     "@context": {
       "$ref": "context-schema.json"
@@ -34,12 +41,5 @@
     "geographicAreaCode": {
       "$ref": "geographicAreaCode.json"
     }
-  },
-  "required": [
-    "@context",
-    "gndIdentifier",
-    "id",
-    "preferredName",
-    "type"
-  ]
+  }
 }
