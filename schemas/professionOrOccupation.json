@@ -6,7 +6,9 @@
   "type":"array",
   "properties": {
     "id":{
-      "type":"string"
+      "type":"string",
+      "format":"uri",
+      "pattern": "^https:\/\/d-nb.info\/gnd\/.*"
     },
     "label":{
       "type":"string"
