@@ -3,5 +3,8 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Type",
   "description": "Das Schema für das type-Feld",
-  "contains": {"pattern":"AuthorityResource"}
+  "type":"array",
+  "contains": {
+    "type":"string",
+    "pattern":"AuthorityResource"}
 }
