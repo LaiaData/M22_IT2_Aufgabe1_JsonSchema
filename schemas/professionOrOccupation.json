@@ -4,14 +4,17 @@
   "title": "Profession oder  Beruf",
   "description": "Das Schema für das professionOrOccupation-Feld",
   "type":"array",
-  "properties": {
-    "id":{
-      "type":"string",
-      "format":"uri",
-      "pattern": "^https:\/\/d-nb.info\/gnd\/.*"
-    },
-    "label":{
-      "type":"string"
+  "items":{
+    "type":"object",
+    "properties": {
+      "id":{
+        "type":"string",
+        "format":"uri",
+        "pattern": "^https:\/\/d-nb.info\/gnd\/.*"
+      },
+      "label":{
+        "type":"string"
+      }
     }
-  }
+  } 
 }  
